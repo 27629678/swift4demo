@@ -32,3 +32,21 @@ dog.sayHello()
 let path = \Dog.name
 
 print("\(dog[keyPath: path])")
+
+/// 多行文本注意对齐最后面的「"""」
+
+let banner = """
+               __,
+              (          o   /) _/_
+               `.  , , , ,  //  /
+             (___)(_(_/_(_ //_ (__
+                          /)
+                         (/
+             """
+let multilineString = """
+                      abc
+                      def
+                      hij
+                      """
+print(multilineString)
+print(banner)

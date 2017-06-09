@@ -27,6 +27,7 @@ class ViewController: UIViewController {
         print("\(benji.sayHi())")
         print("\(benji.sayGoodBye())")
         
+        benji.name.dropLast()
         
         // MARK: key path
         
