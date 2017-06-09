@@ -20,11 +20,32 @@ class ViewController: UIViewController {
         self.navigationController?.navigationBar.prefersLargeTitles = true
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        let benji = Kid(name: "benji", age: 12)
+        print("\(benji.sayHi())")
+        print("\(benji.sayGoodBye())")
+        
+        
+        // MARK: key path
+        
+        // swift 3.x
+        // must be dynamic property
+//        let path = #keyPath(Kid.name)
+//        print("\(benji.value(forKeyPath: path))")
+        
+        // swift 4 or later
+        let path1 = \Kid.name
+        print("\(benji[keyPath: path1])")
     }
 
 
+}
+
+extension Kid {
+    public func sayGoodBye() -> String {
+        return "Bye!!! I'm \(self.name)"
+    }
 }
 
