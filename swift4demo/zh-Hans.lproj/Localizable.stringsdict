@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>description</key>
+	<dict>
+		<key>NSStringVariableWidthRuleType</key>
+		<dict>
+			<key>20</key>
+			<string>only display 20 characters</string>
+			<key>30</key>
+			<string>only display 30 characters</string>
+		</dict>
+	</dict>
+	<key>%d demo(s)</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@demos@</string>
+		<key>demos</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>zero</key>
+			<string>无演示示例</string>
+			<key>other</key>
+			<string>%d 个演示示例</string>
+		</dict>
+	</dict>
+</dict>
+</plist>

@@ -14,10 +14,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
         
         let format = NSLocalizedString("%d demo(s)", comment: "")
-        title = String.localizedStringWithFormat(format, 3)
+        title = String.localizedStringWithFormat(format, DemoModel.elements().count)
         
         let description = NSLocalizedString("description", comment: "") as NSString
         
