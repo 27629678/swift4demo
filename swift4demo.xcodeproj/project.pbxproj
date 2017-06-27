@@ -8,18 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		3FC6D33A0FCE4A03351D35A6 /* Pods_swift4demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20AD280B8A0A520CDD0F0207 /* Pods_swift4demo.framework */; };
+		DA361BC71F01FAB600D04E71 /* DemoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA361BC61F01FAB600D04E71 /* DemoModel.swift */; };
 		DA90DA611EE95497000F5688 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA90DA601EE95497000F5688 /* AppDelegate.swift */; };
 		DA90DA631EE95497000F5688 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA90DA621EE95497000F5688 /* ViewController.swift */; };
 		DA90DA661EE95497000F5688 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA90DA641EE95497000F5688 /* Main.storyboard */; };
 		DA90DA681EE95497000F5688 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA90DA671EE95497000F5688 /* Assets.xcassets */; };
 		DA90DA6B1EE95497000F5688 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA90DA691EE95497000F5688 /* LaunchScreen.storyboard */; };
-		DAFA37CE1EEA51F9007058DD /* Kid.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFA37CD1EEA51F9007058DD /* Kid.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		20AD280B8A0A520CDD0F0207 /* Pods_swift4demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_swift4demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		366F1F8CB3CDB1FFC6689A16 /* Pods-swift4demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swift4demo.release.xcconfig"; path = "Pods/Target Support Files/Pods-swift4demo/Pods-swift4demo.release.xcconfig"; sourceTree = "<group>"; };
 		6B61B94168747104A5648BEE /* Pods-swift4demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swift4demo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-swift4demo/Pods-swift4demo.debug.xcconfig"; sourceTree = "<group>"; };
+		DA361BC61F01FAB600D04E71 /* DemoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoModel.swift; sourceTree = "<group>"; };
 		DA90DA5D1EE95496000F5688 /* swift4demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = swift4demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA90DA601EE95497000F5688 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DA90DA621EE95497000F5688 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -27,7 +28,6 @@
 		DA90DA671EE95497000F5688 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DA90DA6A1EE95497000F5688 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DA90DA6C1EE95497000F5688 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DAFA37CD1EEA51F9007058DD /* Kid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kid.swift; sourceTree = "<group>"; };
 		DAFA37CF1EEA54C1007058DD /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
 
@@ -80,7 +80,7 @@
 				DA90DA671EE95497000F5688 /* Assets.xcassets */,
 				DA90DA691EE95497000F5688 /* LaunchScreen.storyboard */,
 				DA90DA6C1EE95497000F5688 /* Info.plist */,
-				DAFA37CD1EEA51F9007058DD /* Kid.swift */,
+				DA361BC61F01FAB600D04E71 /* DemoModel.swift */,
 			);
 			path = swift4demo;
 			sourceTree = "<group>";
@@ -216,8 +216,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA90DA631EE95497000F5688 /* ViewController.swift in Sources */,
+				DA361BC71F01FAB600D04E71 /* DemoModel.swift in Sources */,
 				DA90DA611EE95497000F5688 /* AppDelegate.swift in Sources */,
-				DAFA37CE1EEA51F9007058DD /* Kid.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

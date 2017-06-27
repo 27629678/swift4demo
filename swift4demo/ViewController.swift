@@ -8,45 +8,51 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
+    @IBOutlet weak var tableView: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        self.title = "hello"
+        title = "Demos"
         
-        self.navigationItem.largeTitleDisplayMode = .automatic
-        self.navigationController?.navigationBar.prefersLargeTitles = true
+        navigationItem.largeTitleDisplayMode = .automatic
+        navigationController?.navigationBar.prefersLargeTitles = true
+        
+        tableView.delegate = self
+        tableView.dataSource = self
+        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "default")
     }
 
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
-        let benji = Kid(name: "benji", age: 12)
-        print("\(benji.sayHi())")
-        print("\(benji.sayGoodBye())")
-        
-        benji.name.dropLast()
-        
-        // MARK: key path
-        
-        // swift 3.x
-        // must be dynamic property
-//        let path = #keyPath(Kid.name)
-//        print("\(benji.value(forKeyPath: path))")
-        
-        // swift 4 or later
-        let path1 = \Kid.name
-        print("\(benji[keyPath: path1])")
     }
-
-
-}
-
-extension Kid {
-    public func sayGoodBye() -> String {
-        return "Bye!!! I'm \(self.name)"
+    
+    // MARK: table view delegate & data source
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return DemoModel.elements().count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "default", for: indexPath)
+        
+        guard indexPath.section == 0 else {
+            return UITableViewCell(style: .default, reuseIdentifier: "none")
+        }
+        
+        cell.textLabel?.text = DemoModel.elements()[indexPath.row] as String? ?? "no title"
+        
+        return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView .deselectRow(at: indexPath, animated: true)
     }
 }
 
