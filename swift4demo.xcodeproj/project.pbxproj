@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		3FC6D33A0FCE4A03351D35A6 /* Pods_swift4demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20AD280B8A0A520CDD0F0207 /* Pods_swift4demo.framework */; };
 		DA361BC71F01FAB600D04E71 /* DemoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA361BC61F01FAB600D04E71 /* DemoModel.swift */; };
+		DA4345BD1F021EB900B10852 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = DA4345BF1F021EB900B10852 /* Localizable.strings */; };
 		DA90DA611EE95497000F5688 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA90DA601EE95497000F5688 /* AppDelegate.swift */; };
 		DA90DA631EE95497000F5688 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA90DA621EE95497000F5688 /* ViewController.swift */; };
 		DA90DA661EE95497000F5688 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA90DA641EE95497000F5688 /* Main.storyboard */; };
@@ -24,6 +25,8 @@
 		DA4345B41F020AF800B10852 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
 		DA4345B71F020B9D00B10852 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		DA4345B91F020BD100B10852 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		DA4345BE1F021EB900B10852 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		DA4345C01F021EC000B10852 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		DA90DA5D1EE95496000F5688 /* swift4demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = swift4demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA90DA601EE95497000F5688 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DA90DA621EE95497000F5688 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -83,6 +86,7 @@
 				DA90DA671EE95497000F5688 /* Assets.xcassets */,
 				DA90DA691EE95497000F5688 /* LaunchScreen.storyboard */,
 				DA90DA6C1EE95497000F5688 /* Info.plist */,
+				DA4345BF1F021EB900B10852 /* Localizable.strings */,
 				DA361BC61F01FAB600D04E71 /* DemoModel.swift */,
 			);
 			path = swift4demo;
@@ -162,6 +166,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA90DA6B1EE95497000F5688 /* LaunchScreen.storyboard in Resources */,
+				DA4345BD1F021EB900B10852 /* Localizable.strings in Resources */,
 				DA90DA681EE95497000F5688 /* Assets.xcassets in Resources */,
 				DA90DA661EE95497000F5688 /* Main.storyboard in Resources */,
 			);
@@ -231,6 +236,15 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		DA4345BF1F021EB900B10852 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DA4345BE1F021EB900B10852 /* zh-Hans */,
+				DA4345C01F021EC000B10852 /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		DA90DA641EE95497000F5688 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
