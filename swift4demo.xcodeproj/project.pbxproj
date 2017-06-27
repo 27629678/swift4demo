@@ -37,6 +37,7 @@
 		DA9E6F3F1F02416B00E6CD0F /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		DA9E6F401F02416B00E6CD0F /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.stringsdict; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.stringsdict"; sourceTree = "<group>"; };
 		DA9E6F411F02416B00E6CD0F /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		DA9E6F4D1F02441900E6CD0F /* Localization.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Localization.md; sourceTree = "<group>"; };
 		DAFA37CF1EEA54C1007058DD /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
 
@@ -83,6 +84,7 @@
 		DA90DA5F1EE95496000F5688 /* swift4demo */ = {
 			isa = PBXGroup;
 			children = (
+				DA9E6F4C1F02440500E6CD0F /* docs */,
 				DA90DA601EE95497000F5688 /* AppDelegate.swift */,
 				DA90DA621EE95497000F5688 /* ViewController.swift */,
 				DA90DA641EE95497000F5688 /* Main.storyboard */,
@@ -94,6 +96,14 @@
 				DA9E6F3D1F02414500E6CD0F /* Localizable.strings */,
 			);
 			path = swift4demo;
+			sourceTree = "<group>";
+		};
+		DA9E6F4C1F02440500E6CD0F /* docs */ = {
+			isa = PBXGroup;
+			children = (
+				DA9E6F4D1F02441900E6CD0F /* Localization.md */,
+			);
+			path = docs;
 			sourceTree = "<group>";
 		};
 		EB5B1926D9971B6039A78177 /* Frameworks */ = {
