@@ -8,9 +8,21 @@
 
 import Foundation
 
-class DemoModel: NSObject {
+class Demo {
+    var name: String?
+    var identifier: String?
     
-    static func elements() -> [[String : String]] {
-        return [["title": "Localization", "identifier": "123"]]
+    init(_ name: String, identifier id: String? = nil) {
+        self.name = name
+        self.identifier = id
+    }
+}
+
+class DemoModel {
+    
+    static func demos() -> [Demo] {
+        return [ Demo("Localization"),
+                 Demo("ABC", identifier: nil),
+        ];
     }
 }

@@ -16,7 +16,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         super.viewDidLoad()
         
         let format = NSLocalizedString("%d demo(s)", comment: "")
-        title = String.localizedStringWithFormat(format, DemoModel.elements().count)
+        title = String.localizedStringWithFormat(format, DemoModel.demos().count)
         
         let description = NSLocalizedString("description", comment: "") as NSString
         
@@ -40,7 +40,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return DemoModel.elements().count
+        return DemoModel.demos().count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -50,13 +50,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             return UITableViewCell(style: .default, reuseIdentifier: "none")
         }
         
-        if let dic = DemoModel.elements()[indexPath.row] as [String : String]? {
-            cell.textLabel?.text = NSLocalizedString(dic["title"]!, comment: "")
-        }
-        else {
-            cell.textLabel?.text = "no title"
-        }
-        
+        let demo = DemoModel.demos()[indexPath.row];
+        cell.textLabel?.text = NSLocalizedString(demo.name!, comment: "")
         
         return cell
     }
