@@ -16,7 +16,12 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        title = NSLocalizedString("Demos", comment: "")
+        let format = NSLocalizedString("%d demo(s)", comment: "")
+        title = String.localizedStringWithFormat(format, 3)
+        
+        let description = NSLocalizedString("description", comment: "") as NSString
+        
+        print(description.variantFittingPresentationWidth(20))
         
         navigationItem.largeTitleDisplayMode = .automatic
         navigationController?.navigationBar.prefersLargeTitles = true
@@ -46,7 +51,13 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             return UITableViewCell(style: .default, reuseIdentifier: "none")
         }
         
-        cell.textLabel?.text = DemoModel.elements()[indexPath.row] as String? ?? "no title"
+        if let dic = DemoModel.elements()[indexPath.row] as [String : String]? {
+            cell.textLabel?.text = NSLocalizedString(dic["title"]!, comment: "")
+        }
+        else {
+            cell.textLabel?.text = "no title"
+        }
+        
         
         return cell
     }

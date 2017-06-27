@@ -10,7 +10,7 @@ import Foundation
 
 class DemoModel: NSObject {
     
-    static func elements() -> [String] {
-        return ["Localization"]
+    static func elements() -> [[String : String]] {
+        return [["title": "Localization", "identifier": "123"]]
     }
 }
