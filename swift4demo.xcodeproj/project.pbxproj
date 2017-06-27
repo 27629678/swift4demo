@@ -13,7 +13,7 @@
 		DA90DA631EE95497000F5688 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA90DA621EE95497000F5688 /* ViewController.swift */; };
 		DA90DA661EE95497000F5688 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA90DA641EE95497000F5688 /* Main.storyboard */; };
 		DA90DA681EE95497000F5688 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA90DA671EE95497000F5688 /* Assets.xcassets */; };
-		DA90DA6B1EE95497000F5688 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA90DA691EE95497000F5688 /* LaunchScreen.storyboard */; };
+		DA90DA6B1EE95497000F5688 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA90DA691EE95497000F5688 /* LaunchScreen.storyboard */; settings = {ASSET_TAGS = (welcome, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +21,9 @@
 		366F1F8CB3CDB1FFC6689A16 /* Pods-swift4demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swift4demo.release.xcconfig"; path = "Pods/Target Support Files/Pods-swift4demo/Pods-swift4demo.release.xcconfig"; sourceTree = "<group>"; };
 		6B61B94168747104A5648BEE /* Pods-swift4demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swift4demo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-swift4demo/Pods-swift4demo.debug.xcconfig"; sourceTree = "<group>"; };
 		DA361BC61F01FAB600D04E71 /* DemoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoModel.swift; sourceTree = "<group>"; };
+		DA4345B41F020AF800B10852 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
+		DA4345B71F020B9D00B10852 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		DA4345B91F020BD100B10852 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		DA90DA5D1EE95496000F5688 /* swift4demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = swift4demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA90DA601EE95497000F5688 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DA90DA621EE95497000F5688 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -122,6 +125,9 @@
 		DA90DA551EE95496000F5688 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				KnownAssetTags = (
+					welcome,
+				);
 				LastSwiftUpdateCheck = 0900;
 				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = "XY Network Co., Ltd.";
@@ -138,6 +144,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
 			);
 			mainGroup = DA90DA541EE95496000F5688;
 			productRefGroup = DA90DA5E1EE95496000F5688 /* Products */;
@@ -228,6 +235,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				DA90DA651EE95497000F5688 /* Base */,
+				DA4345B41F020AF800B10852 /* zh-Hans */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -236,6 +244,8 @@
 			isa = PBXVariantGroup;
 			children = (
 				DA90DA6A1EE95497000F5688 /* Base */,
+				DA4345B71F020B9D00B10852 /* en */,
+				DA4345B91F020BD100B10852 /* zh-Hans */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -247,6 +257,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -302,6 +313,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -357,7 +369,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.xy.swift4demo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -372,7 +384,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.xy.swift4demo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
