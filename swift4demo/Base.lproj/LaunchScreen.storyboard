@@ -22,18 +22,27 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2qe-br-lqr">
-                                <rect key="frame" x="16" y="299" width="343" height="69"/>
+                                <rect key="frame" x="16" y="303.5" width="343" height="60"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="50"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avatar.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="9Ar-lq-Dbt">
+                                <rect key="frame" x="100" y="107" width="174" height="174"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="174" id="n8W-27-LPP"/>
+                                    <constraint firstAttribute="width" constant="174" id="tji-Sb-i2x"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="2qe-br-lqr" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="9lD-OL-U23"/>
-                            <constraint firstItem="2qe-br-lqr" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" id="MbW-Dh-RyD"/>
-                            <constraint firstItem="2qe-br-lqr" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="279" id="Qnk-Xq-2wT"/>
-                            <constraint firstItem="2qe-br-lqr" firstAttribute="trailing" secondItem="Ze5-6b-2t3" secondAttribute="trailingMargin" id="loD-ks-lwZ"/>
+                            <constraint firstItem="2qe-br-lqr" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="0mO-Sb-zco"/>
+                            <constraint firstItem="2qe-br-lqr" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" id="1O6-Xg-mtz"/>
+                            <constraint firstItem="9Ar-lq-Dbt" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="3Pw-Iu-yk2"/>
+                            <constraint firstItem="2qe-br-lqr" firstAttribute="top" secondItem="9Ar-lq-Dbt" secondAttribute="bottom" constant="22.5" id="AaE-5O-ObD"/>
+                            <constraint firstItem="2qe-br-lqr" firstAttribute="trailing" secondItem="Ze5-6b-2t3" secondAttribute="trailingMargin" id="Ie8-gx-AqP"/>
+                            <constraint firstItem="2qe-br-lqr" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="U6M-0O-A5U"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -42,4 +51,7 @@
             <point key="canvasLocation" x="52" y="374.66266866566718"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="avatar.jpg" width="200" height="200"/>
+    </resources>
 </document>
