@@ -19,7 +19,7 @@
 
 3. 直接使用IP地址连接，如下图所示
 
-![connect_via_ip](./Sources/Debuging_01)
+![connect_via_ip](./Sources/Debuging_01.png)
 
 > 在设备熄屏状态下，XCodeDevice管理页面会显示调试设备未连接状态，不用关心，直接调试会直接再次连接到该设备，只要设备还在同一个网段内
 
@@ -31,7 +31,7 @@
 
 #### 1.3 Directly Instrument
 
-![profile](./Sources/Debuging_02)
+![profile](./Sources/Debuging_02.png)
 
 #### 1.4 BreakPoint
 

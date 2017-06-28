@@ -19,6 +19,7 @@
 		DA90DA681EE95497000F5688 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA90DA671EE95497000F5688 /* Assets.xcassets */; };
 		DA90DA6B1EE95497000F5688 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA90DA691EE95497000F5688 /* LaunchScreen.storyboard */; settings = {ASSET_TAGS = (welcome, ); }; };
 		DA9E6F3B1F02414500E6CD0F /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = DA9E6F3D1F02414500E6CD0F /* Localizable.strings */; };
+		DADE48591F0394B9001A2554 /* FindRuntimeIssueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DADE48581F0394B9001A2554 /* FindRuntimeIssueViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,10 @@
 		DA9E6F411F02416B00E6CD0F /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		DA9E6F4D1F02441900E6CD0F /* Localization.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Localization.md; sourceTree = "<group>"; };
 		DADE48521F0389D2001A2554 /* Github and Source Control.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "Github and Source Control.md"; sourceTree = "<group>"; };
+		DADE48531F0390AB001A2554 /* Finding Bugs Using XCode.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "Finding Bugs Using XCode.md"; sourceTree = "<group>"; };
+		DADE48551F03916E001A2554 /* Debuging_01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Debuging_01.png; sourceTree = "<group>"; };
+		DADE48561F03916E001A2554 /* Debuging_02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Debuging_02.png; sourceTree = "<group>"; };
+		DADE48581F0394B9001A2554 /* FindRuntimeIssueViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindRuntimeIssueViewController.swift; sourceTree = "<group>"; };
 		DAFA37CF1EEA54C1007058DD /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
 
@@ -76,6 +81,7 @@
 			isa = PBXGroup;
 			children = (
 				DA0B3D201F033F010080EEB9 /* DemoViewController.swift */,
+				DADE48571F0394A3001A2554 /* FindRuntimeIssue */,
 				DA0B3D191F033BB20080EEB9 /* Localization */,
 			);
 			path = demos;
@@ -130,11 +136,30 @@
 		DA9E6F4C1F02440500E6CD0F /* docs */ = {
 			isa = PBXGroup;
 			children = (
+				DADE48541F03916E001A2554 /* Sources */,
 				DA9E6F4D1F02441900E6CD0F /* Localization.md */,
 				DA0B3D231F037D000080EEB9 /* Debuging.md */,
 				DADE48521F0389D2001A2554 /* Github and Source Control.md */,
+				DADE48531F0390AB001A2554 /* Finding Bugs Using XCode.md */,
 			);
 			path = docs;
+			sourceTree = "<group>";
+		};
+		DADE48541F03916E001A2554 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				DADE48551F03916E001A2554 /* Debuging_01.png */,
+				DADE48561F03916E001A2554 /* Debuging_02.png */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		DADE48571F0394A3001A2554 /* FindRuntimeIssue */ = {
+			isa = PBXGroup;
+			children = (
+				DADE48581F0394B9001A2554 /* FindRuntimeIssueViewController.swift */,
+			);
+			path = FindRuntimeIssue;
 			sourceTree = "<group>";
 		};
 		EB5B1926D9971B6039A78177 /* Frameworks */ = {
@@ -274,6 +299,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DADE48591F0394B9001A2554 /* FindRuntimeIssueViewController.swift in Sources */,
 				DA90DA631EE95497000F5688 /* ViewController.swift in Sources */,
 				DA361BC71F01FAB600D04E71 /* DemoModel.swift in Sources */,
 				DA0B3D1C1F033BC40080EEB9 /* LocalizationViewController.swift in Sources */,

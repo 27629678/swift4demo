@@ -22,6 +22,7 @@ class DemoModel {
     
     static func demos() -> [Demo] {
         return [ Demo("Localization", identifier: "LocalizationViewController"),
+                 Demo("Finding Runtime Issues", identifier: "FindRuntimeIssueViewController"),
         ];
     }
 }

@@ -39,7 +39,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IKf-qK-Xft" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1247" y="123"/>
+            <point key="canvasLocation" x="1311" y="-1250"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -70,11 +70,122 @@
                     <connections>
                         <outlet property="tableView" destination="1KI-p1-HrK" id="vnS-Cl-GsV"/>
                         <segue destination="rOE-dZ-blq" kind="show" identifier="LocalizationViewController" id="1Np-xy-VYi"/>
+                        <segue destination="QjB-Rk-g3K" kind="show" identifier="FindRuntimeIssueViewController" id="Hg9-kH-ppQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="456.80000000000001" y="123.68815592203899"/>
+        </scene>
+        <!--Find Runtime Issue View Controller-->
+        <scene sceneID="Q67-AC-6vQ">
+            <objects>
+                <viewController id="QjB-Rk-g3K" customClass="FindRuntimeIssueViewController" customModule="swift4demo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="beI-7L-NFz"/>
+                        <viewControllerLayoutGuide type="bottom" id="Gbz-dp-Es6"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="xsa-fR-zHH">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6ur-nj-raC">
+                                <rect key="frame" x="250" y="104" width="54" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="BLb-Rd-OQp"/>
+                                    <constraint firstAttribute="width" constant="54" id="pXC-sB-i6E"/>
+                                </constraints>
+                                <state key="normal" title="Start"/>
+                                <connections>
+                                    <action selector="startDownAction:" destination="QjB-Rk-g3K" eventType="touchUpInside" id="TlG-rf-ERK"/>
+                                </connections>
+                            </button>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Od9-4d-N5g">
+                                <rect key="frame" x="16" y="118" width="226" height="2"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="2" id="QF8-gt-ft6"/>
+                                </constraints>
+                            </progressView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Main Thread Sanitizer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y4L-FG-BjB">
+                                <rect key="frame" x="16" y="72" width="183" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="nag-py-q1I"/>
+                                    <constraint firstAttribute="width" constant="183" id="plW-WB-hdT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Memory Sanitizer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OQu-a3-WzO">
+                                <rect key="frame" x="16" y="151" width="144" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="6ps-b6-yVr"/>
+                                    <constraint firstAttribute="width" constant="144" id="m09-WO-dZ5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FmT-1R-djh">
+                                <rect key="frame" x="250" y="146" width="54" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="54" id="ZrG-c4-l2g"/>
+                                    <constraint firstAttribute="height" constant="30" id="jIV-gc-mA5"/>
+                                </constraints>
+                                <state key="normal" title="Start"/>
+                                <connections>
+                                    <action selector="memorySanityAction:" destination="QjB-Rk-g3K" eventType="touchUpInside" id="0l7-TZ-Moh"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thread Sanitizer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4C6-zi-6K6">
+                                <rect key="frame" x="16" y="196" width="155" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="155" id="EDJ-TJ-Pa4"/>
+                                    <constraint firstAttribute="height" constant="21" id="y23-vO-yq0"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ksl-Yz-nlt">
+                                <rect key="frame" x="250" y="191" width="54" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="NR1-lD-8oS"/>
+                                    <constraint firstAttribute="width" constant="54" id="s2U-C9-2oo"/>
+                                </constraints>
+                                <state key="normal" title="Start"/>
+                                <connections>
+                                    <action selector="threadSanityAction:" destination="QjB-Rk-g3K" eventType="touchUpInside" id="Sff-vU-kxI"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Y4L-FG-BjB" firstAttribute="leading" secondItem="xsa-fR-zHH" secondAttribute="leading" constant="16" id="0KD-ak-ddV"/>
+                            <constraint firstAttribute="trailing" secondItem="6ur-nj-raC" secondAttribute="trailing" constant="16" id="2Pu-Tu-ZVJ"/>
+                            <constraint firstItem="6ur-nj-raC" firstAttribute="top" secondItem="Y4L-FG-BjB" secondAttribute="bottom" constant="11" id="3yk-ja-kQp"/>
+                            <constraint firstAttribute="trailing" secondItem="FmT-1R-djh" secondAttribute="trailing" constant="16" id="80T-KV-sFE"/>
+                            <constraint firstItem="Y4L-FG-BjB" firstAttribute="top" secondItem="beI-7L-NFz" secondAttribute="bottom" constant="8" id="Dte-8r-d0C"/>
+                            <constraint firstItem="OQu-a3-WzO" firstAttribute="leading" secondItem="xsa-fR-zHH" secondAttribute="leading" constant="16" id="EFH-9o-kJ2"/>
+                            <constraint firstAttribute="trailing" secondItem="ksl-Yz-nlt" secondAttribute="trailing" constant="16" id="FCs-Q8-dRH"/>
+                            <constraint firstItem="6ur-nj-raC" firstAttribute="leading" secondItem="Od9-4d-N5g" secondAttribute="trailing" constant="8" id="aFw-M7-sOr"/>
+                            <constraint firstItem="OQu-a3-WzO" firstAttribute="top" secondItem="beI-7L-NFz" secondAttribute="bottom" constant="87" id="bMX-fW-y4l"/>
+                            <constraint firstItem="4C6-zi-6K6" firstAttribute="top" secondItem="beI-7L-NFz" secondAttribute="bottom" constant="132" id="drD-sl-uHC"/>
+                            <constraint firstItem="Od9-4d-N5g" firstAttribute="top" secondItem="Y4L-FG-BjB" secondAttribute="bottom" constant="25" id="gHa-Fc-l8q"/>
+                            <constraint firstItem="Od9-4d-N5g" firstAttribute="leading" secondItem="xsa-fR-zHH" secondAttribute="leading" constant="16" id="lDB-Ug-gvB"/>
+                            <constraint firstItem="ksl-Yz-nlt" firstAttribute="top" secondItem="beI-7L-NFz" secondAttribute="bottom" constant="127" id="pC6-mO-Tmw"/>
+                            <constraint firstItem="4C6-zi-6K6" firstAttribute="leading" secondItem="xsa-fR-zHH" secondAttribute="leading" constant="16" id="qQy-Kb-2L6"/>
+                            <constraint firstItem="FmT-1R-djh" firstAttribute="top" secondItem="beI-7L-NFz" secondAttribute="bottom" constant="82" id="uvX-g5-c3f"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="progressView" destination="Od9-4d-N5g" id="0rK-Lq-TpH"/>
+                        <outlet property="startBtn" destination="6ur-nj-raC" id="Dnu-cf-Ghc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PWj-OP-RaU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1426.875" y="123.75"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="0YS-E3-XMe">
