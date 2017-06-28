@@ -31,7 +31,15 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let target = segue.destination as? DemoViewController else {
+            return
+        }
         
+        guard let title = (sender as? Demo)?.name else {
+            return
+        }
+        
+        target.demoTitle = NSLocalizedString(title, comment: "")
     }
     
     // MARK: table view delegate & data source
@@ -51,13 +59,20 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         }
         
         let demo = DemoModel.demos()[indexPath.row];
-        cell.textLabel?.text = NSLocalizedString(demo.name!, comment: "")
+        cell.textLabel?.text = NSLocalizedString(demo.name, comment: "")
         
         return cell
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView .deselectRow(at: indexPath, animated: true)
+        
+        let demo = DemoModel.demos()[indexPath.row]
+        guard let identifier = demo.identifier else {
+            return
+        }
+        
+        performSegue(withIdentifier: identifier, sender: demo)
     }
 }
 

@@ -9,7 +9,7 @@
 import Foundation
 
 class Demo {
-    var name: String?
+    var name: String
     var identifier: String?
     
     init(_ name: String, identifier id: String? = nil) {
@@ -21,8 +21,7 @@ class Demo {
 class DemoModel {
     
     static func demos() -> [Demo] {
-        return [ Demo("Localization"),
-                 Demo("ABC", identifier: nil),
+        return [ Demo("Localization", identifier: "LocalizationViewController"),
         ];
     }
 }
