@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		3FC6D33A0FCE4A03351D35A6 /* Pods_swift4demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20AD280B8A0A520CDD0F0207 /* Pods_swift4demo.framework */; };
 		DA2411A51F0231DE0089707A /* Localizable.stringsdict in Resources */ = {isa = PBXBuildFile; fileRef = DA2411A71F0231DE0089707A /* Localizable.stringsdict */; };
-		DA2F9DD31F025E1A001AA547 /* avatar.png in Resources */ = {isa = PBXBuildFile; fileRef = DA2F9DD51F025E1A001AA547 /* avatar.png */; };
 		DA361BC71F01FAB600D04E71 /* DemoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA361BC61F01FAB600D04E71 /* DemoModel.swift */; };
 		DA90DA611EE95497000F5688 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA90DA601EE95497000F5688 /* AppDelegate.swift */; };
 		DA90DA631EE95497000F5688 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA90DA621EE95497000F5688 /* ViewController.swift */; };
@@ -23,9 +22,9 @@
 		20AD280B8A0A520CDD0F0207 /* Pods_swift4demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_swift4demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		366F1F8CB3CDB1FFC6689A16 /* Pods-swift4demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swift4demo.release.xcconfig"; path = "Pods/Target Support Files/Pods-swift4demo/Pods-swift4demo.release.xcconfig"; sourceTree = "<group>"; };
 		6B61B94168747104A5648BEE /* Pods-swift4demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swift4demo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-swift4demo/Pods-swift4demo.debug.xcconfig"; sourceTree = "<group>"; };
+		DA0B3D101F03356A0080EEB9 /* en */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = en; path = en.lproj/avatar.jpg; sourceTree = "<group>"; };
+		DA0B3D111F03359B0080EEB9 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "zh-Hans"; path = "zh-Hans.lproj/avatar.jpg"; sourceTree = "<group>"; };
 		DA2411A61F0231DE0089707A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.stringsdict; name = en; path = en.lproj/Localizable.stringsdict; sourceTree = "<group>"; };
-		DA2F9DD41F025E1A001AA547 /* en */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = en; path = en.lproj/avatar.png; sourceTree = "<group>"; };
-		DA2F9DD61F025E23001AA547 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "zh-Hans"; path = "zh-Hans.lproj/avatar.png"; sourceTree = "<group>"; };
 		DA361BC61F01FAB600D04E71 /* DemoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoModel.swift; sourceTree = "<group>"; };
 		DA4345B71F020B9D00B10852 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		DA90DA5D1EE95496000F5688 /* swift4demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = swift4demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -87,7 +86,7 @@
 		DA90DA5F1EE95496000F5688 /* swift4demo */ = {
 			isa = PBXGroup;
 			children = (
-				DA2F9DD51F025E1A001AA547 /* avatar.png */,
+				DA0B3D0F1F03356A0080EEB9 /* avatar.jpg */,
 				DA9E6F4C1F02440500E6CD0F /* docs */,
 				DA90DA601EE95497000F5688 /* AppDelegate.swift */,
 				DA90DA621EE95497000F5688 /* ViewController.swift */,
@@ -188,7 +187,6 @@
 				DA90DA681EE95497000F5688 /* Assets.xcassets in Resources */,
 				DA2411A51F0231DE0089707A /* Localizable.stringsdict in Resources */,
 				DA90DA661EE95497000F5688 /* Main.storyboard in Resources */,
-				DA2F9DD31F025E1A001AA547 /* avatar.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,6 +254,15 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		DA0B3D0F1F03356A0080EEB9 /* avatar.jpg */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DA0B3D101F03356A0080EEB9 /* en */,
+				DA0B3D111F03359B0080EEB9 /* zh-Hans */,
+			);
+			name = avatar.jpg;
+			sourceTree = "<group>";
+		};
 		DA2411A71F0231DE0089707A /* Localizable.stringsdict */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -263,16 +270,6 @@
 				DA9E6F401F02416B00E6CD0F /* zh-Hans */,
 			);
 			name = Localizable.stringsdict;
-			sourceTree = "<group>";
-		};
-		DA2F9DD51F025E1A001AA547 /* avatar.png */ = {
-			isa = PBXVariantGroup;
-			children = (
-				DA2F9DD41F025E1A001AA547 /* en */,
-				DA2F9DD61F025E23001AA547 /* zh-Hans */,
-			);
-			name = avatar.png;
-			path = ../../../Downloads;
 			sourceTree = "<group>";
 		};
 		DA90DA641EE95497000F5688 /* Main.storyboard */ = {
