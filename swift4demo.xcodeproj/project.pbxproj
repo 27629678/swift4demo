@@ -30,6 +30,7 @@
 		DA0B3D1A1F033BC40080EEB9 /* LocalizationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizationViewController.swift; sourceTree = "<group>"; };
 		DA0B3D1F1F033D2D0080EEB9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
 		DA0B3D201F033F010080EEB9 /* DemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoViewController.swift; sourceTree = "<group>"; };
+		DA0B3D231F037D000080EEB9 /* Debuging.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Debuging.md; sourceTree = "<group>"; };
 		DA2411A61F0231DE0089707A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.stringsdict; name = en; path = en.lproj/Localizable.stringsdict; sourceTree = "<group>"; };
 		DA361BC61F01FAB600D04E71 /* DemoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoModel.swift; sourceTree = "<group>"; };
 		DA4345B71F020B9D00B10852 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
@@ -129,6 +130,7 @@
 			isa = PBXGroup;
 			children = (
 				DA9E6F4D1F02441900E6CD0F /* Localization.md */,
+				DA0B3D231F037D000080EEB9 /* Debuging.md */,
 			);
 			path = docs;
 			sourceTree = "<group>";
