@@ -7,9 +7,9 @@
 		<key>NSStringVariableWidthRuleType</key>
 		<dict>
 			<key>20</key>
-			<string>宽度规则(20)</string>
-			<key>30</key>
-			<string>宽度规则(30)</string>
+			<string>0123456789</string>
+			<key>480</key>
+			<string>ABCDEFJHIJKLMNOPQRSTUVWXYZ</string>
 		</dict>
 	</dict>
 	<key>%d demo(s)</key>

@@ -60,12 +60,15 @@ class LocalizationViewController: DemoViewController, UITableViewDelegate, UITab
         
         switch indexPath.row {
         case 0:
+            let width = Int(UIScreen.main.bounds.width)
             let content = NSLocalizedString("description", comment: "") as NSString
-            text = content.variantFittingPresentationWidth(30)
+            let format = content.variantFittingPresentationWidth(width)
+            text = String.localizedStringWithFormat(format)
             
         case 1:
             let format = NSLocalizedString("%d demo(s)", comment: "")
             text = String.localizedStringWithFormat(format, DemoModel.demos().count)
+            
         default:
             text = "no content"
         }
