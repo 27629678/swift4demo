@@ -7,4 +7,5 @@ target 'swift4demo' do
 
   # Pods for swift4demo
   pod 'AFNetworking'
+  pod 'SnapKit'
 end
