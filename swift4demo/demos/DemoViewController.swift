@@ -16,5 +16,7 @@ class DemoViewController: UIViewController {
         super.viewDidLoad()
         
         title = demoTitle
+        
+        navigationItem.largeTitleDisplayMode = .never
     }
 }

@@ -7,9 +7,9 @@
 		<key>NSStringVariableWidthRuleType</key>
 		<dict>
 			<key>20</key>
-			<string>only display 20 characters</string>
+			<string>宽度规则(20)</string>
 			<key>30</key>
-			<string>only display 30 characters</string>
+			<string>宽度规则(30)</string>
 		</dict>
 	</dict>
 	<key>%d demo(s)</key>

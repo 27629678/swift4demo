@@ -10,6 +10,7 @@
 		3FC6D33A0FCE4A03351D35A6 /* Pods_swift4demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20AD280B8A0A520CDD0F0207 /* Pods_swift4demo.framework */; };
 		DA0B3D1C1F033BC40080EEB9 /* LocalizationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0B3D1A1F033BC40080EEB9 /* LocalizationViewController.swift */; };
 		DA0B3D211F033F010080EEB9 /* DemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0B3D201F033F010080EEB9 /* DemoViewController.swift */; };
+		DA0B3D221F03443A0080EEB9 /* avatar.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DA0B3D0F1F03356A0080EEB9 /* avatar.jpg */; };
 		DA2411A51F0231DE0089707A /* Localizable.stringsdict in Resources */ = {isa = PBXBuildFile; fileRef = DA2411A71F0231DE0089707A /* Localizable.stringsdict */; };
 		DA361BC71F01FAB600D04E71 /* DemoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA361BC61F01FAB600D04E71 /* DemoModel.swift */; };
 		DA90DA611EE95497000F5688 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA90DA601EE95497000F5688 /* AppDelegate.swift */; };
@@ -207,6 +208,7 @@
 			files = (
 				DA9E6F3B1F02414500E6CD0F /* Localizable.strings in Resources */,
 				DA90DA6B1EE95497000F5688 /* LaunchScreen.storyboard in Resources */,
+				DA0B3D221F03443A0080EEB9 /* avatar.jpg in Resources */,
 				DA90DA681EE95497000F5688 /* Assets.xcassets in Resources */,
 				DA2411A51F0231DE0089707A /* Localizable.stringsdict in Resources */,
 				DA90DA661EE95497000F5688 /* Main.storyboard in Resources */,
