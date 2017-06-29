@@ -14,3 +14,4 @@
 
 略
 
+> NOTE: 三年过去了，LaunchScreen.storyboard依然无法国际化。
