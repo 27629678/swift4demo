@@ -15,6 +15,7 @@
 		DA361BC71F01FAB600D04E71 /* DemoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA361BC61F01FAB600D04E71 /* DemoModel.swift */; };
 		DA3C231A1F04999A00B1512D /* c_language_demo.c in Sources */ = {isa = PBXBuildFile; fileRef = DA3C23181F04999A00B1512D /* c_language_demo.c */; };
 		DA3C23231F0625AA00B1512D /* swift4demoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3C23221F0625AA00B1512D /* swift4demoUITests.swift */; };
+		DA3C232D1F063EF500B1512D /* UseAfterLifeScopeIssue.m in Sources */ = {isa = PBXBuildFile; fileRef = DA3C232C1F063EF500B1512D /* UseAfterLifeScopeIssue.m */; };
 		DA90DA611EE95497000F5688 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA90DA601EE95497000F5688 /* AppDelegate.swift */; };
 		DA90DA631EE95497000F5688 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA90DA621EE95497000F5688 /* ViewController.swift */; };
 		DA90DA661EE95497000F5688 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA90DA641EE95497000F5688 /* Main.storyboard */; };
@@ -55,6 +56,8 @@
 		DA3C23221F0625AA00B1512D /* swift4demoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swift4demoUITests.swift; sourceTree = "<group>"; };
 		DA3C23241F0625AA00B1512D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DA3C232A1F06294900B1512D /* What's New in LLVM.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "What's New in LLVM.md"; sourceTree = "<group>"; };
+		DA3C232B1F063EF500B1512D /* UseAfterLifeScopeIssue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UseAfterLifeScopeIssue.h; sourceTree = "<group>"; };
+		DA3C232C1F063EF500B1512D /* UseAfterLifeScopeIssue.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UseAfterLifeScopeIssue.m; sourceTree = "<group>"; };
 		DA4345B71F020B9D00B10852 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		DA90DA5D1EE95496000F5688 /* swift4demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = swift4demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA90DA601EE95497000F5688 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -203,6 +206,8 @@
 			isa = PBXGroup;
 			children = (
 				DADE48581F0394B9001A2554 /* FindRuntimeIssueViewController.swift */,
+				DA3C232B1F063EF500B1512D /* UseAfterLifeScopeIssue.h */,
+				DA3C232C1F063EF500B1512D /* UseAfterLifeScopeIssue.m */,
 			);
 			path = FindRuntimeIssue;
 			sourceTree = "<group>";
@@ -388,6 +393,7 @@
 				DA361BC71F01FAB600D04E71 /* DemoModel.swift in Sources */,
 				DA0B3D1C1F033BC40080EEB9 /* LocalizationViewController.swift in Sources */,
 				DA3C231A1F04999A00B1512D /* c_language_demo.c in Sources */,
+				DA3C232D1F063EF500B1512D /* UseAfterLifeScopeIssue.m in Sources */,
 				DA90DA611EE95497000F5688 /* AppDelegate.swift in Sources */,
 				DA0B3D211F033F010080EEB9 /* DemoViewController.swift in Sources */,
 			);

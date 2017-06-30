@@ -21,6 +21,7 @@ class FindRuntimeIssueViewController: DemoViewController, URLSessionDownloadDele
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        UseAfterLifeScopeIssue.run()
         progressView.progress = 0
     }
     

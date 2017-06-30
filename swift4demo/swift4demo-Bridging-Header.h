@@ -3,3 +3,4 @@
 //
 
 #include "c_language_demo.h"
+#import "UseAfterLifeScopeIssue.h"
