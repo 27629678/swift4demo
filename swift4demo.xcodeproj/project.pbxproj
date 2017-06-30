@@ -14,6 +14,7 @@
 		DA2411A51F0231DE0089707A /* Localizable.stringsdict in Resources */ = {isa = PBXBuildFile; fileRef = DA2411A71F0231DE0089707A /* Localizable.stringsdict */; };
 		DA361BC71F01FAB600D04E71 /* DemoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA361BC61F01FAB600D04E71 /* DemoModel.swift */; };
 		DA3C231A1F04999A00B1512D /* c_language_demo.c in Sources */ = {isa = PBXBuildFile; fileRef = DA3C23181F04999A00B1512D /* c_language_demo.c */; };
+		DA3C23231F0625AA00B1512D /* swift4demoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3C23221F0625AA00B1512D /* swift4demoUITests.swift */; };
 		DA90DA611EE95497000F5688 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA90DA601EE95497000F5688 /* AppDelegate.swift */; };
 		DA90DA631EE95497000F5688 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA90DA621EE95497000F5688 /* ViewController.swift */; };
 		DA90DA661EE95497000F5688 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA90DA641EE95497000F5688 /* Main.storyboard */; };
@@ -22,6 +23,16 @@
 		DA9E6F3B1F02414500E6CD0F /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = DA9E6F3D1F02414500E6CD0F /* Localizable.strings */; };
 		DADE48591F0394B9001A2554 /* FindRuntimeIssueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DADE48581F0394B9001A2554 /* FindRuntimeIssueViewController.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DA3C23251F0625AA00B1512D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DA90DA551EE95496000F5688 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DA90DA5C1EE95496000F5688;
+			remoteInfo = swift4demo;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		20AD280B8A0A520CDD0F0207 /* Pods_swift4demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_swift4demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -39,6 +50,11 @@
 		DA3C23171F04999A00B1512D /* swift4demo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "swift4demo-Bridging-Header.h"; sourceTree = "<group>"; };
 		DA3C23181F04999A00B1512D /* c_language_demo.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = c_language_demo.c; sourceTree = "<group>"; };
 		DA3C23191F04999A00B1512D /* c_language_demo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = c_language_demo.h; sourceTree = "<group>"; };
+		DA3C231B1F04A54200B1512D /* What's New in Testing.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "What's New in Testing.md"; sourceTree = "<group>"; };
+		DA3C23201F0625AA00B1512D /* swift4demoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = swift4demoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA3C23221F0625AA00B1512D /* swift4demoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swift4demoUITests.swift; sourceTree = "<group>"; };
+		DA3C23241F0625AA00B1512D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA3C232A1F06294900B1512D /* What's New in LLVM.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "What's New in LLVM.md"; sourceTree = "<group>"; };
 		DA4345B71F020B9D00B10852 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		DA90DA5D1EE95496000F5688 /* swift4demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = swift4demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA90DA601EE95497000F5688 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -62,6 +78,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		DA3C231D1F0625AA00B1512D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DA90DA5A1EE95496000F5688 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -100,11 +123,21 @@
 			path = Localization;
 			sourceTree = "<group>";
 		};
+		DA3C23211F0625AA00B1512D /* swift4demoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DA3C23221F0625AA00B1512D /* swift4demoUITests.swift */,
+				DA3C23241F0625AA00B1512D /* Info.plist */,
+			);
+			path = swift4demoUITests;
+			sourceTree = "<group>";
+		};
 		DA90DA541EE95496000F5688 = {
 			isa = PBXGroup;
 			children = (
 				DAFA37CF1EEA54C1007058DD /* MyPlayground.playground */,
 				DA90DA5F1EE95496000F5688 /* swift4demo */,
+				DA3C23211F0625AA00B1512D /* swift4demoUITests */,
 				DA90DA5E1EE95496000F5688 /* Products */,
 				B8EE5D8467836806D8E2EBD5 /* Pods */,
 				EB5B1926D9971B6039A78177 /* Frameworks */,
@@ -115,6 +148,7 @@
 			isa = PBXGroup;
 			children = (
 				DA90DA5D1EE95496000F5688 /* swift4demo.app */,
+				DA3C23201F0625AA00B1512D /* swift4demoUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -150,6 +184,8 @@
 				DADE48521F0389D2001A2554 /* Github and Source Control.md */,
 				DADE48531F0390AB001A2554 /* Finding Bugs Using XCode.md */,
 				DA3C23161F04934400B1512D /* UnderstandUndefinedBehavior.md */,
+				DA3C231B1F04A54200B1512D /* What's New in Testing.md */,
+				DA3C232A1F06294900B1512D /* What's New in LLVM.md */,
 			);
 			path = docs;
 			sourceTree = "<group>";
@@ -182,6 +218,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		DA3C231F1F0625AA00B1512D /* swift4demoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DA3C23271F0625AA00B1512D /* Build configuration list for PBXNativeTarget "swift4demoUITests" */;
+			buildPhases = (
+				DA3C231C1F0625AA00B1512D /* Sources */,
+				DA3C231D1F0625AA00B1512D /* Frameworks */,
+				DA3C231E1F0625AA00B1512D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DA3C23261F0625AA00B1512D /* PBXTargetDependency */,
+			);
+			name = swift4demoUITests;
+			productName = swift4demoUITests;
+			productReference = DA3C23201F0625AA00B1512D /* swift4demoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		DA90DA5C1EE95496000F5688 /* swift4demo */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = DA90DA6F1EE95497000F5688 /* Build configuration list for PBXNativeTarget "swift4demo" */;
@@ -215,6 +269,10 @@
 				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = "XY Network Co., Ltd.";
 				TargetAttributes = {
+					DA3C231F1F0625AA00B1512D = {
+						CreatedOnToolsVersion = 9.0;
+						TestTargetID = DA90DA5C1EE95496000F5688;
+					};
 					DA90DA5C1EE95496000F5688 = {
 						CreatedOnToolsVersion = 9.0;
 						LastSwiftMigration = 0900;
@@ -236,11 +294,19 @@
 			projectRoot = "";
 			targets = (
 				DA90DA5C1EE95496000F5688 /* swift4demo */,
+				DA3C231F1F0625AA00B1512D /* swift4demoUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		DA3C231E1F0625AA00B1512D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DA90DA5B1EE95496000F5688 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -305,6 +371,14 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		DA3C231C1F0625AA00B1512D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA3C23231F0625AA00B1512D /* swift4demoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DA90DA591EE95496000F5688 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -320,6 +394,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DA3C23261F0625AA00B1512D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DA90DA5C1EE95496000F5688 /* swift4demo */;
+			targetProxy = DA3C23251F0625AA00B1512D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		DA0B3D0F1F03356A0080EEB9 /* avatar.jpg */ = {
@@ -372,6 +454,32 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		DA3C23281F0625AA00B1512D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = swift4demoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.demo.swift4demoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = swift4demo;
+			};
+			name = Debug;
+		};
+		DA3C23291F0625AA00B1512D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = swift4demoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.demo.swift4demoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = swift4demo;
+			};
+			name = Release;
+		};
 		DA90DA6D1EE95497000F5688 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -515,6 +623,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		DA3C23271F0625AA00B1512D /* Build configuration list for PBXNativeTarget "swift4demoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA3C23281F0625AA00B1512D /* Debug */,
+				DA3C23291F0625AA00B1512D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		DA90DA581EE95496000F5688 /* Build configuration list for PBXProject "swift4demo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
