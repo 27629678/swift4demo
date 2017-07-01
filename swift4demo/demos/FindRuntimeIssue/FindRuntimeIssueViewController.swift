@@ -66,7 +66,10 @@ class FindRuntimeIssueViewController: DemoViewController, URLSessionDownloadDele
     // MARK: AddressSanitizer(Scope)
     @IBAction func memorySanityAction(_ sender: Any) {
 //        use_after_scope_demo()
-        use_after_scope_swift_demo()
+        use_after_return_demo()
+        
+        
+//        use_after_scope_swift_demo()
     }
     
     private func use_after_scope_swift_demo() {
@@ -81,14 +84,12 @@ class FindRuntimeIssueViewController: DemoViewController, URLSessionDownloadDele
     }
     
     @IBAction func threadSanityAction(_ sender: Any) {
-        DispatchQueue.global().async {
-            for item in 1..<10000 {
-                self.raceList.append(String(item))
-            }
+        DispatchQueue(label: "com.xy.demo.queue1").async {
+            self.raceList.append("running on queue 1")
         }
         
-        for item in 10000..<20000 {
-            self.raceList.append(String(item))
+        DispatchQueue(label: "com.xy.demo.queue2").async {
+            self.raceList.append("running on queue 2")
         }
     }
     

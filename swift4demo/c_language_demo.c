@@ -8,6 +8,8 @@
 
 #include "c_language_demo.h"
 
+#include "stdlib.h"
+
 int uninitialized_value_demo() {
     int a;
     
@@ -34,6 +36,20 @@ int use_after_scope_demo() {
     
     printf("use_after_scope_result: %d\n", *pointer);
     *pointer = 2016;
+    
+    return 0;
+}
+
+uint32_t *pointer_to_random_integer_value() {
+    uint32_t random = arc4random_uniform(10000);
+    // unsafe pointer never store local variable
+    
+    return &random;
+}
+
+int use_after_return_demo() {
+    uint32_t *pointer = pointer_to_random_integer_value();
+    printf("use_after_return_demo_result: %d\n", *pointer);
     
     return 0;
 }

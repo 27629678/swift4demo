@@ -13,4 +13,5 @@
 
 #endif /* c_language_demo_h */
 
-int use_after_scope_demo();
+int use_after_scope_demo(void);
+int use_after_return_demo(void);
