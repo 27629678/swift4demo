@@ -21,7 +21,7 @@ class FindRuntimeIssueViewController: DemoViewController, URLSessionDownloadDele
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        UseAfterLifeScopeIssue.run()
+//        UseAfterLifeScopeIssue.run()
         progressView.progress = 0
     }
     
@@ -65,22 +65,19 @@ class FindRuntimeIssueViewController: DemoViewController, URLSessionDownloadDele
     
     // MARK: AddressSanitizer(Scope)
     @IBAction func memorySanityAction(_ sender: Any) {
-        
-        let str = "hello, world"
-//        var pointer: UnsafePointer<Int8>?
-//
-//        str.withCString { cstring in
-//            pointer = cstring
-//        }
-//
-//        print(pointer!.pointee)
-        
-        var target: Character? = nil
-        for char in str {
-            target = char
+//        use_after_scope_demo()
+        use_after_scope_swift_demo()
+    }
+    
+    private func use_after_scope_swift_demo() {
+        var pointer: UnsafeMutablePointer<String>?
+        "hello, world".withCString { cstring in
+            var tmp = "Hi, pointer"
+            //            withUnsafePointer(to: &tmp, { pointer = $0})
+            withUnsafeMutablePointer(to: &tmp, { pointer = $0 })
         }
         
-        print(target ?? "")
+        pointer?.pointee = "Hi, i got it."
     }
     
     @IBAction func threadSanityAction(_ sender: Any) {

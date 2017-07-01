@@ -23,7 +23,17 @@ int dereference_demo(int *value) {
     return tmp;
 }
 
-void start() {
-//    printf("uninitialized demo result: %d\n", uninitialized_value_demo());
-//    printf("dereference demo result: %d\n", dereference_demo(NULL));
+int use_after_scope_demo() {
+    int *pointer = NULL;
+    if (1 > 0) {
+        int tmp = 2017;
+        pointer = &tmp;
+        
+        tmp = 2018;
+    }
+    
+    printf("use_after_scope_result: %d\n", *pointer);
+    *pointer = 2016;
+    
+    return 0;
 }

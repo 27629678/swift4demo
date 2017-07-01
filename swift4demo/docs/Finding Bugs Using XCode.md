@@ -17,11 +17,22 @@ UI Update：UIKit, AppKit, and WebKit
 
 Language: Swift and C languages
 
-> 不需要重新编译，默认开启
+> 不需要重新编译，默认开启，调试时即可他用；终于可以享受Android的调试方式了；但是有个缺点，无法调试App启动时运行的代码，这是因为Attach到一个Process需要时间的；
 
 #### 1.2 内存检查器
 
-使用已经释放的指针
+内存问题会引起严重的安全性Bug，比如：
+
+- 使用'未初始化的对象(use uninitailized obj)'
+- 使用'已经被释放的对象（use-after- free）'
+- '缓冲区溢出（buffer overflow）'
+
+这些问题是难以重现的Bug；
+
+内存检查器可以探测以下问题：
+
+- use-after-scope
+- use-after-return
 
 #### 1.3 线程检查器
 
